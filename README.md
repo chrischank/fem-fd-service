@@ -4,6 +4,11 @@ This is a companion repository for the [Modern Deployment](https://frontendmaste
 ## goals Application
 
 This application is a social media platform for setting and sharing life goals and aspirations.
+=======
+## goals
+
+A platform for setting and sharing life goals and aspirations.
+>>>>>>> 385d044a63cf03f883cafb8239436965e2792c4d
 
 ### Features
 
