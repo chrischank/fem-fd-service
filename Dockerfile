@@ -21,7 +21,7 @@ RUN go build -o main .
 FROM alpine:latest
 
 # Set environment variables
-ENV DOCKERISE_VERSION v0.9.3
+ENV DOCKERISE_VERSION=v0.9.3
 
 # Install dependencies
 RUN apk update --no-cache \
