@@ -12,4 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: extractions/setup-just@v3
+        with: 
+          just-version: 1.5.0
+
       - run: just build-image
