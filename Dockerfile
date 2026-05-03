@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/golang:1.24.2-alpine AS build
+FROM public.ecr.aws/docker/library/golang:1.25.7-alpine AS build
 
 RUN go install github.com/pressly/goose/v3/cmd/goose@latest
 
@@ -24,7 +24,7 @@ FROM alpine:latest
 ENV DOCKERISE_VERSION v0.9.3
 
 # Install dependencies
-RUN apk update --no-cahce \
+RUN apk update --no-cache \
     && apk add --no-cache wget openssl \
     && wget -O /usr/local/bin/dockerize https://github.com/jwilder/dockerize/releases/download/$DOCKERISE_VERSION/dockerize-alpine-linux-amd64-$DOCKERISE_VERSION.tar.gz \
     && apk del wget
